@@ -6,7 +6,7 @@ application = Flask(__name__)
 @application.route('/index')
 def register():
 	username = os.environ.get("Username")
-	version = "This is version 2 of our application"
+	version = "This is version 2 of your application"
 	return render_template('index.html', username = username, version = version)
 
 if __name__ == '__main__':
